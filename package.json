@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-filecopy",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-filecopy",
+    "platforms": [
+      "android"
+    ]
+  },
+  "scripts": {
+    "version": "sync-cordova-xml package.json plugin.xml --output plugin.xml && git add plugin.xml"
+  },
+  "author": "Bikash Ojha",
+  "license": "ISC",
+  "devDependencies": {
+    "sync-cordova-xml": "^0.4.0"
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-filecopy" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>filecopy</name>
+    <js-module name="filecopy" src="www/filecopy.js">
+        <clobbers target="filecopy" />
+    </js-module>
+    <platform name="android">
+        <framework src="commons-io:commons-io:2.6" />
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="filecopy">
+                <param name="android-package" value="com.tulsi.filecopy.filecopy" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/filecopy.java" target-dir="src/com/tulsi/filecopy/filecopy" />
+    </platform>
+</plugin>
